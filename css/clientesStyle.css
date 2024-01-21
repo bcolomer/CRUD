@@ -17,8 +17,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-/*}
-#fondo {*/
     position: absolute;
     top: 0;
     left: 0;
@@ -26,14 +24,18 @@ body {
     height: 100%;
     background: url(../img/fondoLogin.jpg) no-repeat center center fixed;
     background-size: cover;
+   
 }
 #container{
+    padding-top: 1%;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80%;
     margin: auto;
+    
+   
 }
 .text{
   font-size: 33px;
@@ -44,13 +46,15 @@ body {
 /***** estilo tablas ********/
 
 table {
-  border: 3px solid #ccc;
+  /*border: 3px solid #ee0f0f;*/
+  
   border-collapse: collapse;
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
-  /* border-radius: 20px!important; */
+  /*table-layout: fixed; */
+     box-shadow: 10px 10px 15px rgba(79, 79, 79, 0.785); 
+   border-radius: 20px;
 }
 
 table caption {
@@ -59,26 +63,24 @@ table caption {
 }
 
 table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+background-color: #DDE1E7;  /* border: 1px solid #ddd;*/
   padding: .35em;
+  border-top: 1px solid #A1A1A1;
+  
+  /*esto me da bordes solo en la version movil*********/
   border-top-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+     border-bottom-right-radius: 15px;
 }
 
 table th,
 table td {
-  padding: .625em;
+  padding: 0.625em;
   text-align: center;
 }
 
-.email {
- /*border-bottom: 1px solid #ddd;*/
-  display: block;
-  font-size: .8em;
-  text-align: right;
-  /*overflow: hidden; /* Agregado para evitar desbordamiento */
-  overflow-x: auto;
-}
+
 
 table th {
   font-size: .85em;
@@ -86,10 +88,69 @@ table th {
   text-transform: uppercase;
   
 }
-.arriz{
-    border-radius: 15px;
-    border: solid 10px black;
+#cabecera{
+    background-color: #a1a1a1;
+    color: rgb(71, 71, 71);
+    height: 60px;
+    border-top: none;
+      /* border: 1px solid #ddd;*/
 }
+#arrizq {
+    border-top-left-radius: 20px;
+    padding-left: 13px;
+}
+
+#arrder {
+    border-top-right-radius: 20px;
+}
+
+#abaizq {
+    border-bottom-left-radius: 20px;
+}
+
+#abader {
+    border-bottom-right-radius: 20px;
+}
+/*****Estilos de boton*******/
+
+button {
+  margin: 12px 0;
+  width: 80%;
+  height: 20px;
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 600;
+  background: #89cff0;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #0c1289;
+  box-shadow: 2px 2px 5px #BABECC, -5px -5px 10px #ffffff73;
+}
+
+.warning {
+  background: #89cff0;
+  color: #0c1289;
+}
+
+.danger {
+  background: #89cff0;
+  color: #0c1289;
+}
+
+
+button:focus {
+  color: #0c1289;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -2px -2px 5px #ffffff73;
+}
+
+button:active {
+  box-shadow: 2px 2px 5px #BABECC, -5px -5px 10px #ffffff73;
+}
+
+
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;
@@ -144,6 +205,13 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
+  button {
+    width: 18%; /* Ajusta el ancho al 100% del contenedor */
+    height: 30px; /* Ajusta la altura según tu preferencia */
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    line-height: 20px; /* Ajusta la altura de línea del texto */
+ 
+border-radius: 20px;}
 }
 
 
