@@ -13,74 +13,97 @@
     <div>
 
         <div id="container">
+            <div class="table-container">
+                <table class="content">
 
-            <table class="content">
+                    <caption class="text">Listado de Clientes</caption>
 
-                <caption class="text">Listado de Clientes</caption>
+                    <tr id="cabecera">
+                        <th scope="col" class="list" id="arrizq">codigo</th>
+                        <th scope="col">nombre</th>
+                        <th scope="col">apellido</th>
+                        <th scope="col" class="edad">edad</th>
+                        <th scope="col">telefono</th>
+                        <th scope="col">correo electronico</th>
+                        <th id="arrder"></th>
+                    </tr>
+                    <tr>
+                        <td data-label="Identificacion" class="list">1</td>
+                        <td data-label="Nombre">Silvia</td>
+                        <td data-label="Apellido">Gonzalez Jimenez</td>
+                        <td data-label="Edad" class="edad">39</td>
+                        <td data-label="Telefono">+34 958481738</td>
+                        <td data-label="Email">ante.dictum.cursus@outlook.edu</td>
+                        <td data-label="Acciones"><button class="actions" class="btn warning">Editar</button>
+                            <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Identificacion" class="list">2</td>
+                        <td data-label="Nombre">Andres</td>
+                        <td data-label="Apellido">Molina Caballero</td>
+                        <td data-label="Edad" class="edad">20</td>
+                        <td data-label="Telefono">+34 567589613</td>
+                        <td data-label="Email">aenean.gravida@outlook.net</td>
+                        <td data-label="Acciones"><button class="actions" class="btn warning">Editar</button>
+                            <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Identificacion" class="list">3</td>
+                        <td data-label="Nombre">Ana</td>
+                        <td data-label="Apellido">Romero Serrano</td>
+                        <td data-label="Edad" class="edad">46</td>
+                        <td data-label="Telefono">+34 677441913</td>
+                        <td data-label="Email">a.sollicitudin.orci@outlook.org</td>
+                        <td data-label="Acciones"><button class="actions" class="btn warning">Editar</button>
+                            <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Identificacion" class="list">4</td>
+                        <td data-label="Nombre">Cristina</td>
+                        <td data-label="Apellido">Guerrero Lopez</td>
+                        <td data-label="Edad" class="edad">46</td>
+                        <td data-label="Telefono">+34 621848526</td>
+                        <td data-label="Email">vitae.velit@google.edu</td>
+                        <td data-label="Acciones"><button class="actions" class="btn warning">Editar</button>
+                            <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Identificacion" class="list" id="abaizq">5</td>
+                        <td data-label="Nombre">Juan Ramon</td>
+                        <td data-label="Apellido">Mora Garcia</td>
+                        <td data-label="Edad" class="edad">68</td>
+                        <td data-label="Telefono">+34 717916168</td>
+                        <td data-label="Email">lectus@yahoo.org</td>
+                        <td data-label="Acciones" id="abader"><button class="actions"
+                                class="btn warning">Editar</button>
+                            <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
+                        </td>
+                    </tr>
 
-                <tr id="cabecera">
-                    <th scope="col" class="list" id="arrizq">codigo</th>
-                    <th scope="col">nombre</th>
-                    <th scope="col">apellido</th>
-                    <th scope="col" class="edad">edad</th>
-                    <th scope="col">telefono</th>
-                    <th id="arrder"></th>
-                </tr>
-                <tr>
-                    <td data-label="Identificacion" class="list">1</td>
-                    <td data-label="Nombre">Silvia</td>
-                    <td data-label="Apellido">Gonzalez Jimenez</td>
-                    <td data-label="Edad" class="edad">39</td>
-                    <td data-label="Telefono">+34 95 88 17 38</td>
-                    <td data-label="Acciones"><button class="btn warning">Editar</button>
-                        <button class="btn danger">Borrar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-label="Identificacion" class="list">2</td>
-                    <td data-label="Nombre">Andres</td>
-                    <td data-label="Apellido">Molina Caballero</td>
-                    <td data-label="Edad" class="edad">20</td>
-                    <td data-label="Telefono">+34 56 78 16 13</td>
-                    <td data-label="Acciones"><button class="btn warning">Editar</button>
-                        <button class="btn danger">Borrar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-label="Identificacion" class="list">3</td>
-                    <td data-label="Nombre">Ana</td>
-                    <td data-label="Apellido">Romero Serrano</td>
-                    <td data-label="Edad" class="edad">46</td>
-                    <td data-label="Telefono">+34 67 44 19 13</td>
-                    <td data-label="Acciones"><button class="btn warning">Editar</button>
-                        <button class="btn danger">Borrar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-label="Identificacion" class="list">4</td>
-                    <td data-label="Nombre">Cristina</td>
-                    <td data-label="Apellido">Guerrero Lopez</td>
-                    <td data-label="Edad" class="edad">46</td>
-                    <td data-label="Telefono">+34 21 84 85 26</td>
-                    <td data-label="Acciones"><button class="btn warning">Editar</button>
-                        <button class="btn danger">Borrar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td data-label="Identificacion" class="list" id="abaizq">5</td>
-                    <td data-label="Nombre">Juan Ramon</td>
-                    <td data-label="Apellido">Mora Garcia</td>
-                    <td data-label="Edad" class="edad">68</td>
-                    <td data-label="Telefono">+34 71 91 61 68</td>
-                    <td data-label="Acciones" id="abader"><button class="btn warning">Editar</button>
-                        <button class="btn danger">Borrar</button>
-                    </td>
-                </tr>
-
-            </table>
+                </table>
+            </div>
+            <button class="btn insert">Insertar datos</button>
         </div>
-        <button class="btn insert">Insertar datos</button>
-    </div>
+        <script>
+            function borrarRegistro() {
+                // Mostrar un cuadro de diálogo de confirmación
+                var confirmacion = window.confirm("¿Estás seguro de que quieres borrar este registro?");
+
+                // Verificar la respuesta del usuario
+                if (confirmacion) {
+                    // Aquí puedes agregar la lógica para borrar el registro
+                    alert("Registro borrado correctamente");
+                } else {
+                    // Aquí puedes agregar la lógica en caso de que el usuario cancele
+                    alert("Operación cancelada");
+                }
+            }
+        </script>
+
 </body>
 
 </html>
