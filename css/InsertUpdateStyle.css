@@ -32,8 +32,16 @@ body {
   margin-top: 2%;
   padding: 20px;
   border: 3px solid white;
+  text-align: center;
+    max-width: 800px; 
+    
+
 }
-h2{
+.text{
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #595959;
 }
 .row {
   margin-bottom: 15px;
@@ -67,6 +75,7 @@ select {
 
 button {
   width: 30%;
+  
   padding: 15px;
   margin-top: 20px;
   background-color: #89cff0;
@@ -89,5 +98,7 @@ button:active {
   box-shadow: inset -3px -3px 5px #6ca4be, inset 3px 3px 5px #a6faff;
   transform: translateY(2px);
 }
+
+
 
 

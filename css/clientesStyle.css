@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Poppins', "Open Sans", sans-serif;
   line-height: 1.25;
     position: absolute;
     top: 0;
@@ -119,7 +119,6 @@ table th {
 }
 
 
-/* Pseudoclase :hover para cambiar el color de fondo al pasar el ratón sobre las filas */
 table tr:hover {
   background-color: #cacaca;  
     font-style:italic;
@@ -127,19 +126,16 @@ table tr:hover {
     
 }
 
-/* Pseudoclase :hover para cambiar el color de fondo de las celdas al pasar el ratón sobre ellas */
 table tr:hover td {
-  background-color: #cacaca; /* Cambia este color al que desees al pasar el ratón */
+  background-color: #cacaca; 
 }
 table tr:hover button {
-  /* Añade los estilos que desees para el botón al hacer hover en la fila */
-  color: #0c1289; /* Cambia el color del texto */
-  background-color: #89cff0; /* Cambia el color de fondo */
-  border: 2px solid #b5d1e2; /* Cambia el color del borde */
-  /* Añade cualquier otro estilo que desees */
+  color: #0c1289; 
+  background-color: #89cff0; 
+  border: 2px solid #b5d1e2; 
 }
 
-/*****Estilos de boton***b0dee7****/
+/*****Estilos de boton*******/
 
 button.actions {
   margin: 15px ;
@@ -162,7 +158,6 @@ box-shadow: inset -9px -9px 16px #6ca4be,
 
 
 
-/* Estilos para el botón específico con la clase "insert" */
 button.insert {
     width: 50%;
  background-color: #89cff0;
@@ -181,7 +176,6 @@ button.insert {
 box-shadow: inset -9px -9px 16px #6ca4be,
             inset 9px 9px 16px #a6faff;}
 
-/* Estilos adicionales para el botón específico al hacer hover*/
 button.insert:hover {
   color: #ffffff;
   background-color: #4e81a5;
@@ -196,23 +190,23 @@ button.insert:active {
 }
 
 @media screen and (max-width: 950px) {
+    
 button.actions {
     
     display: block;
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: 30px; /* Ajusta la altura según tu preferencia */
-    font-size: 10px; /* Ajusta el tamaño del texto */
-    line-height: 20px; /* Ajusta la altura de línea del texto */
+    width: 80%; 
+    height: 30px; 
+    font-size: 10px; 
+    line-height: 20px; 
  
 border-radius: 10px;}
 }
 @media screen and (max-width: 600px) {
   table {
     border: 0;
-    /*cambiado desde aqui*/
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%; 
     max-width: none; 
-    max-height: 50%; /* Porcentaje en relación con el contenedor padre */
+    max-height: 50%; 
     overflow-y: auto;
     box-shadow: none;
   }
@@ -236,8 +230,6 @@ border-radius: 10px;}
     display: block;
     box-shadow: 10px 10 px 15px rgba(79, 79, 79, 0.785);
     border-radius: 20px;
-
-
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
@@ -254,10 +246,7 @@ border-radius: 10px;}
   }
   
   table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
+    
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -265,16 +254,18 @@ border-radius: 10px;}
   }
   
   table td:last-child {
-    border-bottom: 0;
+    border-bottom: 0; 
   }
+  
   button.actions {
     display: inline-block;
-    width: 25%; /* Ajusta el ancho al 100% del contenedor */
-    height: 30px; /* Ajusta la altura según tu preferencia */
-    font-size: 12px; /* Ajusta el tamaño del texto */
-    line-height: 10px; /* Ajusta la altura de línea del texto */
+    width: 25%; 
+    height: 30px; 
+    font-size: 12px; 
+    line-height: 10px; 
     border-radius: 10px;
  
-    margin-right: 2%; /* Ajusta el margen entre los botones */
+    margin-right: 2%;
   }
 }
+    
