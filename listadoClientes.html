@@ -11,13 +11,10 @@
 
 <body>
     <div>
-
         <div id="container">
             <div class="table-container">
                 <table class="content">
-
                     <caption class="text">Listado de Clientes</caption>
-
                     <tr id="cabecera">
                         <th scope="col" class="list" id="arrizq">codigo</th>
                         <th scope="col">nombre</th>
@@ -37,7 +34,8 @@
                         <td data-label="Email">ante.dictum.cursus@outlook.edu</td>
                         <td data-label="ciudad">Granada</td>
                         <td data-label="Acciones">
-                            <button class="actions" class="btn warning"><a href="actualizacion.html">Editar</a></button>
+                            <button class="actions" class="warning"><a href="actualizacion.html"
+                                    class="button-link">Editar</a></button>
                             <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
                         </td>
                     </tr>
@@ -50,11 +48,11 @@
                         <td data-label="Email">aenean.gravida@outlook.net</td>
                         <td data-label="ciudad">Roma</td>
                         <td data-label="Acciones">
-                            <button class="actions" class="btn warning"><a href="actualizacion.html">Editar</a></button>
+                            <button class="actions" class="warning"><a href="actualizacion.html"
+                                    class="button-link">Editar</a></button>
                             <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
                         </td>
                     </tr>
-
                     <tr>
                         <td data-label="Identificacion" class="list">3</td>
                         <td data-label="Nombre">Ana</td>
@@ -64,7 +62,8 @@
                         <td data-label="Email">a.sollicitudin.orci@outlook.org</td>
                         <td data-label="ciudad">Madrid</td>
                         <td data-label="Acciones">
-                            <button class="actions" class="btn warning"><a href="actualizacion.html">Editar</a></button>
+                            <button class="actions" class="warning"><a href="actualizacion.html"
+                                    class="button-link">Editar</a></button>
                             <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
                         </td>
                     </tr>
@@ -77,7 +76,8 @@
                         <td data-label="Email">vitae.velit@google.edu</td>
                         <td data-label="ciudad">Londres</td>
                         <td data-label="Acciones">
-                            <button class="actions" class="btn warning"><a href="actualizacion.html">Editar</a></button>
+                            <button class="actions" class="warning"><a href="actualizacion.html"
+                                    class="button-link">Editar</a></button>
                             <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
                         </td>
                     </tr>
@@ -90,31 +90,25 @@
                         <td data-label="Email">lectus@yahoo.org</td>
                         <td data-label="ciudad">Marbella</td>
                         <td data-label="Acciones" id="abader">
-                            <button class="actions" class="btn warning"><a href="actualizacion.html">Editar</a></button>
+                            <button class="actions" class="warning"><a href="actualizacion.html"
+                                    class="button-link">Editar</a></button>
                             <button class="actions" class="btn-danger" onclick="borrarRegistro()">Borrar</button>
                         </td>
                     </tr>
-
                 </table>
             </div>
-            <button class="btn insert"><a href="insercion.html">Insertar Cliente</a></button>
+            <button class="insert"><a href="insercion.html" class="button-link">Insertar Cliente</a></button>
         </div>
         <script>
             function borrarRegistro() {
-                // Mostrar un cuadro de diálogo de confirmación
                 var confirmacion = window.confirm("¿Estás seguro de que quieres borrar este registro?");
-
-                // Verificar la respuesta del usuario
                 if (confirmacion) {
-                    // Aquí puedes agregar la lógica para borrar el registro
                     alert("Registro borrado correctamente");
                 } else {
-                    // Aquí puedes agregar la lógica en caso de que el usuario cancele
                     alert("Operación cancelada");
                 }
             }
         </script>
-
 </body>
 
 </html>

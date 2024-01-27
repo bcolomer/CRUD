@@ -4,19 +4,20 @@
 /**Lenguaje de Marcas - 1ero. DAW********/
 /**Alan Turing 2023/24 ******************/
 /****************************************/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 /***** estilo general ********/
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family:'Poppins', "Open Sans", sans-serif;
-  line-height: 1.25;
+    font-family:'Poppins', "Open Sans", sans-serif;
+    line-height: 1.25;
     position: absolute;
     top: 0;
     left: 0;
@@ -24,8 +25,8 @@ body {
     height: 100%;
     background: url(../img/fondoLogin.jpg) no-repeat center center fixed;
     background-size: cover;
-   
 }
+
 #container{
     padding-top: 1%;
     width: 80%;
@@ -34,73 +35,71 @@ body {
     align-items: center;
     height: 80%;
     margin: auto;
-    
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
+
 .table-container{
     width: 80%;
     margin-bottom: 20px;
 }
+
 .text{
-  font-size: 33px;
-  font-weight: 600;
-  margin-bottom: 35px;
-  color: #595959;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #595959;
 }
+
+
 /***** estilo tablas ********/
 
 table {
-  /*border: 3px solid #ee0f0f;*/
-  
-  border-collapse: collapse;
-  margin: 20px 0;
-  padding: 0;
-  width: 100%;
-  /*table-layout: fixed; */
-     box-shadow: 10px 10px 15px rgba(79, 79, 79, 0.785); 
-   border-radius: 20px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 10px 10px 15px rgba(79, 79, 79, 0.785); 
+    border-radius: 20px;
 }
 
 table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
+    font-size: 1.5em;
+     margin: .5em 0 .75em;
 }
 
 table tr {
-background-color: #DDE1E7;  /* border: 1px solid #ddd;*/
-  padding: .35em;
-  border-top: 1px solid #A1A1A1;
-  
+    background-color: #DDE1E7;  /* border: 1px solid #ddd;*/
+    padding: .35em;
+    border-top: 1px solid #A1A1A1;
+
   /*esto me da bordes solo en la version movil*********/
-  border-top-right-radius: 15px;
-   border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-     border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 table th,
 table td {
-  padding: 0.625em;
-  text-align: center;
+    padding: 0.625em;
+    text-align: center;
 }
-
-
 
 table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
+
 #cabecera{
     background-color: #a1a1a1;
     color: rgb(71, 71, 71);
     height: 60px;
     border-top: none;
-      /* border: 1px solid #ddd;*/
 }
+
+/****bordes de tabla***************/
 #arrizq {
     border-top-left-radius: 20px;
     padding-left: 13px;
@@ -118,104 +117,104 @@ table th {
     border-bottom-right-radius: 20px;
 }
 
-
 table tr:hover {
-  background-color: #cacaca;  
+    background-color: #cacaca;  
     font-style:italic;
-    color: #0c1289;
-    
+    color: #0c1289; 
 }
 
 table tr:hover td {
-  background-color: #cacaca; 
+    background-color: #cacaca; 
 }
+
 table tr:hover button {
-  color: #0c1289; 
-  background-color: #89cff0; 
-  border: 2px solid #b5d1e2; 
+    color: #0c1289; 
+    background-color: #89cff0; 
+    border: 2px solid #b5d1e2; 
 }
 
 /*****Estilos de boton*******/
 
 button.actions {
-  margin: 15px ;
-  width: 80%;
-  height: 40px;
-  font-size: 12px;
-  line-height: 23px;
-  font-weight: 600;
-  background: #89cff0;
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #325a77;
-  border-radius: 15px;
-box-shadow: inset -9px -9px 16px #6ca4be,
-            inset 9px 9px 16px #a6faff;
-  /*box-shadow: 2px 2px 5px #BABECC, -5px -5px 10px #ffffff73;*/
+    margin: 15px ;
+    width: 80%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 600;
+    background: #89cff0;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #325a77;
+    border-radius: 15px;
+    box-shadow: inset -9px -9px 16px #6ca4be,
+                inset 9px 9px 16px #a6faff;
 }
-
-
 
 button.insert {
     width: 50%;
- background-color: #89cff0;
- height: 50px;
- padding: 10px;
- margin-bottom: 10%;
-  color: #0c1289;
-  height: 10%;
-  border-radius: 15px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 23px;
-  font-weight: 600;
-box-shadow: inset -9px -9px 16px #6ca4be,
-            inset 9px 9px 16px #a6faff;}
+    background-color: #89cff0;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10%;
+    color: #0c1289;
+    height: 10%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 23px;
+    font-weight: 600;
+    box-shadow: inset -9px -9px 16px #6ca4be,
+                inset 9px 9px 16px #a6faff;}
 
 button.insert:hover {
-  color: #ffffff;
-  background-color: #4e81a5;
-  box-shadow: inset 16px 16px 32px #6ea6c0,
-            inset -16px -16px 32px #a4f8ff;
+    color: #ffffff;
+    background-color: #4e81a5;
+    box-shadow: inset 16px 16px 32px #6ea6c0,
+                inset -16px -16px 32px #a4f8ff;
 } 
+
 button.actions:active,
 button.insert:active {
-  box-shadow: inset -3px -3px 5px #6ca4be,
-              inset 3px 3px 5px #a6faff;
-  transform: translateY(2px);
+    box-shadow: inset -3px -3px 5px #6ca4be,
+                inset 3px 3px 5px #a6faff;
+    transform: translateY(2px);
+}
+
+.button-link {
+    text-decoration: none;
+    color: inherit; /* Para heredar el color del texto del botón */
 }
 
 @media screen and (max-width: 950px) {
-    
 button.actions {
-    
     display: block;
     width: 80%; 
     height: 30px; 
     font-size: 10px; 
-    line-height: 20px; 
- 
-border-radius: 10px;}
+    line-height: 20px;  
+    border-radius: 10px;}
 }
+
 @media screen and (max-width: 600px) {
-  table {
+table {
     border: 0;
     width: 100%; 
     max-width: none; 
     max-height: 50%; 
     overflow-y: auto;
     box-shadow: none;
-  }
+}
 
-  table caption {
+table caption {
     font-size: 1.3em;
-  }
-  
-  table thead {
+}
+
+table thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -224,48 +223,47 @@ border-radius: 10px;}
     padding: 0;
     position: absolute;
     width: 1px;
-  }
-  
-  table tr {
+}
+
+table tr {
     display: block;
     box-shadow: 10px 10 px 15px rgba(79, 79, 79, 0.785);
     border-radius: 20px;
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
-  }
-  #cabecera{
+}
+
+#cabecera{
     display: none;
-  }
-  table td {
+}
+
+table td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
     text-align: right;
     border-bottom: none;
-  }
-  
-  table td::before {
-    
+}
+
+table td::before {
     content: attr(data-label);
     float: left;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  
-  table td:last-child {
+}
+
+table td:last-child {
     border-bottom: 0; 
-  }
-  
-  button.actions {
+}
+
+button.actions {
     display: inline-block;
     width: 25%; 
     height: 30px; 
     font-size: 12px; 
     line-height: 10px; 
     border-radius: 10px;
- 
     margin-right: 2%;
-  }
 }
-    
+}

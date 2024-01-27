@@ -1,16 +1,23 @@
+/*************************************************************/
+/**estilos para formulario de insercion y actualizacion  **** /
+/**Autor:Barbara Colomer**************************************/
+/**Lenguaje de Marcas - 1ero. DAW ****************************/
+/**Alan Turing 2023/24 ***************************************/
+/*************************************************************/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 /***** estilo general ********/
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family:'Poppins', "Open Sans", sans-serif;
-  line-height: 1.25;
+    font-family:'Poppins', "Open Sans", sans-serif;
+    line-height: 1.25;
     position: absolute;
     top: 0;
     left: 0;
@@ -18,47 +25,53 @@ body {
     height: 100%;
     background: url(../img/fondoLogin.jpg) no-repeat center center fixed;
     background-size: cover;
-   
 }
 
 #container {
-  background-color: #DDE1E7;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  box-shadow: 10px 10px 15px rgba(79, 79, 79, 0.785);
-  width: 80%;
-  margin: auto;
-  margin-top: 2%;
-  padding: 20px;
-  border: 3px solid white;
-  text-align: center;
+    background-color: #DDE1E7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(79, 79, 79, 0.785);
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+    border: 3px solid white;
+    text-align: center;
     max-width: 800px; 
-    
+}
 
-}
 .text{
-  font-size: 33px;
-  font-weight: 600;
-  margin-bottom: 35px;
-  color: #595959;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #595959;
 }
+
 .row {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .col-25 {
-  float: left;
-  width: 50%;
-  text-align: right;
-  font-weight: bold;
-  padding-right: 5%;
-  padding-left: 1%;
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5%;
+    padding-left: 1%;
+}
+
+.col-25 label {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 15px; 
+    color: #595959; 
 }
 
 .col-75 {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
+    margin-bottom: 15px; 
 }
 
 input[type="text"],
@@ -66,39 +79,39 @@ input[type="date"],
 input[type="tel"],
 input[type="email"],
 select {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: #ffffff;
+    box-shadow: inset -7px -7px 14px #989b9f,
+                inset 7px 7px 14px #ffffff;
 }
 
 button {
-  width: 30%;
-  
-  padding: 15px;
-  margin-top: 20px;
-  background-color: #89cff0;
-  color: #0c1289;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 600;
-  box-shadow: inset -9px -9px 16px #6ca4be, inset 9px 9px 16px #a6faff;
+    width: 30%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #89cff0;
+    color: #0c1289;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: inset -9px -9px 16px #6ca4be, inset 9px 9px 16px #a6faff;
 }
 
 button:hover {
-  color: #ffffff;
-  background-color: #4e81a5;
-  box-shadow: inset 16px 16px 32px #6ea6c0, inset -16px -16px 32px #a4f8ff;
+    color: #ffffff;
+    background-color: #4e81a5;
+    box-shadow: inset 16px 16px 32px #6ea6c0, 
+                inset -16px -16px 32px #a4f8ff;
 }
 
 button:active {
-  box-shadow: inset -3px -3px 5px #6ca4be, inset 3px 3px 5px #a6faff;
-  transform: translateY(2px);
+    box-shadow: inset -3px -3px 5px #6ca4be, 
+                inset 3px 3px 5px #a6faff;
+    transform: translateY(2px);
 }
-
-
-
-
