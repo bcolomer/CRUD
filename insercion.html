@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ingresar nuevo usuario</title>
+    <link rel="shortcut icon" href="./img/mundo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/InsertUpdateStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div id="container">
+        <form action="">
+            <h2 class="title">Inserción de datos</h2>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nombre</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Ingrese nombre..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Apellidos</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Ingrese apellidos..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="telefono">Número de Teléfono</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese nro. de teléfono" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="correoElectronico">Correo Electrónico</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="correoElectronico" name="correoElectronico"
+                        placeholder="Ingrese correo electrónico" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Ciudad</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Elige ciudad</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Benalmadena">Benalmádena</option>
+                        <option value="Fuengirola">Fuengirola</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Londres">Londres</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Malaga">Málaga</option>
+                        <option value="Marbella">Marbella</option>
+                        <option value="Mijas">Mijas</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Torremolinos">Torremolinos</option>
+                    </select>
+                </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <button>
+            Insertar cliente</button>
+    </div>
+    <div class="row">
+        <button>
+            Resetear </button>
+    </div>
+    </form>
+    </div>
+
+</body>
