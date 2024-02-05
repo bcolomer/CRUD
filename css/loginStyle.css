@@ -128,15 +128,28 @@ button:focus{
 
 /* Estilos para versiones móviles */
 @media only screen and (max-width: 600px) {
+.content {
+    width: 80%; 
+    max-width: 400px; 
+    padding: 30px 20px; 
+  }
+
+  .field {
+    height: 60px; 
+  }
+
+  
+
+
   .content .text {
-    font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    font-size: 24px;
   }
   
   .field input {
-    font-size: 16px; /* Ajusta el tamaño de la fuente de los inputs */
+    font-size: 16px; 
   }
 
   button {
-    font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
+    font-size: 16px; 
   }
 }
