@@ -35,7 +35,7 @@ body{
 .content{
   width: 330px;
   padding: 40px 30px;
-  background: #dde1e7;
+  background: black;/*#dde1e7;*/
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
