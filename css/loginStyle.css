@@ -33,9 +33,9 @@ body{
     background-size: cover;
 }
 .content{
-  width: 330px;
+  width: 90%;
   padding: 40px 30px;
-  background: #dde1e7;
+  background: black/*#dde1e7*/;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
@@ -127,22 +127,11 @@ button:focus{
 }
 
 /* Estilos para versiones móviles */
+
 @media only screen and (max-width: 600px) {
-.content {
-    width: 95%; 
-    max-width: 90%; 
-    padding: 30px 20px; 
-  }
-
-  .field {
-    height: 60px; 
-  }
-
-  
-
 
   .content .text {
-    font-size: 24px;
+    font-size: 24px; /
   }
   
   .field input {
@@ -151,5 +140,24 @@ button:focus{
 
   button {
     font-size: 16px; 
+}
+}
+
+@media only screen and (min-width: 601px) {
+  .content {
+    width: 50%; /* Reducir el ancho del formulario al 50% para tablets y PCs */
+    max-width: 600px; /* Puedes ajustar este valor según tus necesidades */
+  }
+
+  .content .text {
+    font-size: 33px; /* Restaurar el tamaño de la fuente para tablets y PCs si es necesario */
+  }
+
+  .field input {
+    font-size: 18px; /* Restaurar el tamaño de la fuente de los inputs para tablets y PCs si es necesario */
+  }
+
+  button {
+    font-size: 18px; /* Restaurar el tamaño de la fuente del botón para tablets y PCs si es necesario */
   }
 }
