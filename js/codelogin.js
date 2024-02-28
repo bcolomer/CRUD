@@ -7,25 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
 
     loginForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+        event.preventDefault(); 
 
-        // Validar los campos del formulario
         const isValid = validateLoginForm();
 
         if (isValid) {
-            // Si la validación es exitosa, puedes enviar el formulario aquí
             alert('Inicio de sesión exitoso. Redirigiendo...');
-            // loginForm.submit(); // Descomenta esta línea para enviar el formulario
+            loginForm.submit(); 
         }
     });
 
     function validateLoginForm() {
         let isValid = true;
 
-        // Validar el campo de usuario
         isValid = validateField('user', 'userError', 'Usuario', /^[a-zA-Z0-9]+$/) && isValid;
 
-        // Validar el campo de contraseña
         isValid = validateField('password', 'passwordError', 'Contraseña', /^.{6,}$/) && isValid;
 
         return isValid;
@@ -36,18 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const error = document.getElementById(errorId);
         const fieldValue = field.value.trim();
 
-        // Validar el campo
         if (fieldValue === '') {
             error.textContent = `El campo ${fieldLabel} es obligatorio.`;
-            error.style.visibility = 'visible'; // Muestra el mensaje de error
+            error.style.visibility = 'visible'; 
             return false;
         } else if (regex && !regex.test(fieldValue)) {
             error.textContent = `Por favor, ingrese un valor válido en el campo ${fieldLabel}.`;
-            error.style.visibility = 'visible'; // Muestra el mensaje de error
+            error.style.visibility = 'visible'; 
             return false;
         } else {
             error.textContent = '';
-            error.style.visibility = 'hidden'; // Oculta el mensaje de error
+            error.style.visibility = 'hidden'; 
             return true;
         }
     }

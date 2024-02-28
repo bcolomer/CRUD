@@ -143,4 +143,5 @@ button:focus{
 .error {
     color: red;
     visibility: hidden;
+    font-size: 0.8em;
 }
