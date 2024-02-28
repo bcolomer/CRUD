@@ -140,3 +140,7 @@ button:focus{
     font-size: 16px; /* Ajusta el tamaño de la fuente del botón */
   }
 }
+.error {
+    color: red;
+    visibility: hidden;
+}

@@ -12,14 +12,15 @@
 <body>
 
     <div id="container">
-        <form action="">
-            <h2 class="title text">Editar datos</h2>
+        <form id="myForm" action="">
+            <h2 class="title text">Inserción de datos</h2>
             <div class="row">
                 <div class="col-25">
                     <label for="fname">Nombre</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Ingrese nombre..." required>
+                    <input type="text" id="fname" name="firstname" placeholder="Ingrese nombre...">
+                    <div id="fnameError" class="error"></div>
                 </div>
             </div>
             <div class="row">
@@ -27,7 +28,8 @@
                     <label for="lname">Apellidos</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Ingrese apellidos..." required>
+                    <input type="text" id="lname" name="lastname" placeholder="Ingrese apellidos...">
+                    <div id="lnameError" class="error"></div>
                 </div>
             </div>
             <div class="row">
@@ -35,7 +37,8 @@
                     <label for="fechaNacimiento">Fecha de Nacimiento</label>
                 </div>
                 <div class="col-75">
-                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <div id="fechaNacimientoError" class="error"></div>
                 </div>
             </div>
             <div class="row">
@@ -43,7 +46,8 @@
                     <label for="telefono">Número de Teléfono</label>
                 </div>
                 <div class="col-75">
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese nro. de teléfono" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese nro. de teléfono">
+                    <div id="telefonoError" class="error"></div>
                 </div>
             </div>
             <div class="row">
@@ -52,15 +56,16 @@
                 </div>
                 <div class="col-75">
                     <input type="email" id="correoElectronico" name="correoElectronico"
-                        placeholder="Ingrese correo electrónico" required>
+                        placeholder="Ingrese correo electrónico">
+                    <div id="correoElectronicoError" class="error"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="ciudad">Ciudad</label>
+                    <label for="country">Ciudad</label>
                 </div>
                 <div class="col-75">
-                    <select id="ciudad" name="ciudad">
+                    <select id="country" name="country">
                         <option value="" disabled selected>Elige ciudad</option>
                         <option value="Barcelona">Barcelona</option>
                         <option value="Benalmadena">Benalmádena</option>
@@ -75,12 +80,13 @@
                         <option value="Roma">Roma</option>
                         <option value="Torremolinos">Torremolinos</option>
                     </select>
+                    <div id="countryError" class="error"></div>
                 </div>
             </div>
             <div id="button-container">
                 <div>
                     <button type="submit">
-                        Guardar</button>
+                        Insertar cliente</button>
                 </div>
                 <div>
                     <button type="reset">
@@ -89,6 +95,7 @@
             </div>
         </form>
     </div>
+    <script src="./js/codejs.js"></script>
 </body>
 
 </html>
