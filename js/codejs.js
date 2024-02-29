@@ -10,7 +10,7 @@ form.addEventListener('submit', function(event) {
     const isValid = validateForm();
 
     if (isValid) {
-        alert('El formulario es válido. Puedes enviarlo.');
+       // alert('El formulario es válido. Puedes enviarlo.');
          form.submit();
     }
 });
@@ -31,7 +31,6 @@ function validateField(fieldName, errorId, fieldLabel, regex) {
     const error = document.getElementById(errorId);
     const fieldValue = field.value.trim();
 
-    // Validar el campo
     if (fieldValue === '') {
         error.textContent = `El campo ${fieldLabel} es obligatorio.`;
         error.style.visibility = 'visible'; 
@@ -49,7 +48,6 @@ function validateSelectField(fieldName, errorId, fieldLabel) {
     const field = document.getElementById(fieldName);
     const error = document.getElementById(errorId);
 
-    // Validar el campo
     if (field.value === '') {
         error.textContent = `Por favor, selecciona una ${fieldLabel}.`;
         error.style.visibility = 'visible'; 

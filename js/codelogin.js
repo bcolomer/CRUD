@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const isValid = validateLoginForm();
 
         if (isValid) {
-            alert('Inicio de sesión exitoso. Redirigiendo...');
+          //  alert('Inicio de sesión exitoso. Redirigiendo...');
             loginForm.submit(); 
         }
     });
