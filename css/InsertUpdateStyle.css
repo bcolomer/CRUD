@@ -119,3 +119,13 @@ button:active {
     color: red;
     visibility: hidden;
 }
+
+/* Ocultar el placeholder en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .col-75 input[type="text"]::placeholder,
+    .col-75 input[type="date"]::placeholder,
+    .col-75 input[type="tel"]::placeholder,
+    .col-75 input[type="email"]::placeholder {
+        visibility: hidden;
+    }
+}

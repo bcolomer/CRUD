@@ -22,10 +22,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
         isValid = validateField('user', 'userError', 'Usuario', /^[a-zA-Z0-9]+$/) && isValid;
 
-        isValid = validateField('password', 'passwordError', 'Contraseña', /^.{6,}$/) && isValid;
-
+isValid = validatePassword('password', 'passwordErrorMessage') && isValid;
         return isValid;
     }
+    function validatePassword(fieldName, errorMessageId) {
+    const field = document.getElementById(fieldName);
+    const errorMessage = document.getElementById(errorMessageId);
+    const fieldValue = field.value.trim();
+
+    if (fieldValue === '') {
+        errorMessage.textContent = 'El campo Contraseña es obligatorio.';
+        errorMessage.style.visibility = 'visible'; 
+        return false;
+    } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{6,}$/.test(fieldValue)) {
+        errorMessage.textContent = 'La contraseña debe tener al menos 6 caracteres y contener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.';
+        errorMessage.style.visibility = 'visible'; 
+        return false;
+    } else {
+        errorMessage.textContent = '';
+        errorMessage.style.visibility = 'hidden'; 
+        return true;
+    }
+}
 
     function validateField(fieldName, errorId, fieldLabel, regex) {
         const field = document.getElementById(fieldName);
